@@ -73,9 +73,8 @@ nav button:hover {
   background-image: url(../assets/bg/background-top.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 500px;
-  margin: 0 auto;
 }
 
 .hero-left {
@@ -86,7 +85,8 @@ nav button:hover {
   padding: 20px;
   flex-grow: 1;
   width: 50vw;
-  align-items: center;
+  align-items: flex-end;
+  margin-right: 200px;
 }
 
 .hero-left-title {
@@ -905,7 +905,14 @@ footer {
   }
 
   .hero-left {
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-grow: 1;
+    width: 50vw;
+    align-items: center;
   }
 
   .pricing-table {
@@ -985,7 +992,29 @@ footer {
   }
 
   .hero-left {
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -20px;
+  }
+
+  .hero-left-title {
+    width: 300px;
+  }
+
+  .hero-left-title h1 {
+    font-size: 3rem;
+  }
+
+  .hero-left-action {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
   }
 
   .bullets-list {
@@ -1092,5 +1121,247 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  }
+
+  .why-front-title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .hero-right {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    width: 50vw;
+    margin-right: 200px;
+  }
+
+  .hero-right-calender-logo {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    max-width: 80px;
+    max-height: 80px;
+    left: 280px;
+    top: 450px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-right-asana-logo {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    max-width: 80px;
+    max-height: 80px;
+    left: 280px;
+    top: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-right-paypal-logo {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    max-width: 80px;
+    max-height: 80px;
+    left: 20px;
+    top: 225px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-right-google-logo {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    max-width: 60px;
+    max-height: 60px;
+    left: 20px;
+    top: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .plan {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 300px;
+    height: 452px;
+    padding: 30px;
+    justify-content: space-around;
+  }
+
+  .hire-us-left-top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .hire-us-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hire-us-right form {
+    background-color: #ffffff;
+    height: 648px;
+    border-radius: 1%;
+    padding: 30px;
+    width: 300px;
+    height: 690px;
+  }
+
+  .hire-us-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hire-us-right-form-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .form-input-name {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .form-input-name input {
+    width: 50%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .form-input-email {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-input-email input {
+    width: 240px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .form-input-selector {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    width: 240px;
+    justify-content: center;
+  }
+
+  .form-input-selector select {
+    width: 110px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: white;
+  }
+
+  textarea {
+    height: 150px;
+    width: 240px;
+    padding: 10px;
+    font-family: sans-serif;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-group-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 290px;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .form-group-checkbox input {
+    height: 20px;
+    width: 20px;
+    align-items: flex-start;
+  }
+
+  .checkbox-label {
+    width: 240px;
+  }
+
+  .privacy-policy {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  .privacy-policy-left a {
+    text-decoration: none;
+    border-bottom: 1px dashed #677788;
+    color: #677788;
+    display: none;
+  }
+
+  .privacy-policy-right a {
+    text-decoration: none;
+    border-bottom: 1px dashed #2476ff;
+    color: #2476ff;
+    margin-right: 10px;
+  }
+
+  .form-submit-button button {
+    width: 102px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #2476ff;
+    color: #ffffff;
+    border: 0px;
+  }
+
+  .hire-us-left-top-phrase {
+    width: 300px;
   }
 }
